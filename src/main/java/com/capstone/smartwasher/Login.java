@@ -14,7 +14,6 @@ class CreateLoginForm extends JFrame implements ActionListener
     JLabel userLabel, passLabel;
     final JTextField  textField1, textField2;
 
-
     CreateLoginForm()
     {
 
@@ -57,6 +56,7 @@ class CreateLoginForm extends JFrame implements ActionListener
         String passValue = textField2.getText();
 
 
+
         if (userValue.equals("username") && passValue.equals("password")) {
 
 
@@ -67,11 +67,14 @@ class CreateLoginForm extends JFrame implements ActionListener
 
 
             JLabel wel_label = new JLabel("Welcome: "+userValue);
+
             page.getContentPane().add(wel_label);
+            page.getContentPane().setBackground(Color.pink);
+
         }
         else{
 
-            System.out.println("Please enter valid username and password");
+            System.out.println("Invalid login information entered");
             showMessageDialog(null, "Please enter valid username and password");
 
         }

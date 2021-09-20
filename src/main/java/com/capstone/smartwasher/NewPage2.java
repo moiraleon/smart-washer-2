@@ -1,21 +1,13 @@
 package com.capstone.smartwasher;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class NewPage extends JFrame{
+public class NewPage2 extends JFrame {
 
-
-
-    NewPage(){
+    NewPage2(){
         setDefaultCloseOperation(javax.swing.
                 WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Welcome");
         setSize(400, 200);
-
-
-
-
     }
-
 }
